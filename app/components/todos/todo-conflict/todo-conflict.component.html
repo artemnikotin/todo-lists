@@ -1,0 +1,14 @@
+<div *ngIf="shown" class="todo-conflict">
+    <div class="ui active modal">
+        <div class="header">Conflict</div>
+        <div class="content">
+            <p>This todo list was last modified after your changes was done. Choose how you want to resolve conflict</p>
+        </div>
+        <div class="actions">
+            <div class="ui primary button" (click)="select('merge')">Merge</div>
+            <div class="ui teal button" (click)="select('local')">Takes yours</div>
+            <div class="ui teal button" (click)="select('server')">Takes servers</div>
+            <div class="ui cancel button" (click)="select()">Cancel</div>
+        </div>
+    </div>
+</div>

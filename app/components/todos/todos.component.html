@@ -1,0 +1,6 @@
+<todo-form (created)="onTodoCreated($event)"></todo-form>
+<todo-list *ngIf="list" [todos]="list.todos" (toggled)="onTodoToggled($event)" (deleted)="onTodoDeleted($event)"></todo-list>
+<todo-conflict></todo-conflict>
+<div style="margin-top: 20px;">
+    <button class="ui primary button" [disabled]="!dirty" (click)="save()">Save</button>
+</div>

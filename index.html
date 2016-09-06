@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Angular 2 QuickStart</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+
+    <!-- 1. Load libraries -->
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+    <!-- 3. Initialize Firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDaKzfE5jSwqgD7LshMS0QnL0WjChPtT3M",
+            authDomain: "to-do-lists-d755c.firebaseapp.com",
+            databaseURL: "https://to-do-lists-d755c.firebaseio.com",
+            storageBucket: "to-do-lists-d755c.appspot.com",
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<!-- 4. Display the application -->
+
+<body>
+<todo-lists-app>Loading...</todo-lists-app>
+</body>
+</html>
