@@ -12,3 +12,8 @@ npm install
 npm start
 ```
 If browser will not opened automatically, put `localhost:3000` into your browser address bar.
+
+#### Thanks
+Implementation of single list is based on free online lessons:
+
+https://www.youtube.com/playlist?list=PLqHlAwsJRxANDZPGvgX4DQCtN1TTUCUxx
