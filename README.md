@@ -2,6 +2,7 @@ Todo Lists
 ===========
 
 #### Install
+To install the application you will need nodejs v6.x.x or higher and npm 3.x.x or higher.
 ```sh
 npm install
 ```
@@ -9,4 +10,4 @@ npm install
 ```sh
 npm start
 ```
-If browser was not opened automatically, out `localhost:3000` into your browser address bar.
+If browser will not opened automatically, put `localhost:3000` into your browser address bar.
